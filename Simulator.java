@@ -5,6 +5,7 @@ public class Simulator {
 	
 	public Simulator() {
 		initWorkers();
+		// @BC: Wow on two accounts: (1) comments! How useful! How refreshing! (2) Holy nested for loops, Batman!
 		//months
 		for (int m = 0; m < 6; m++) {
 			//weeks
@@ -31,7 +32,8 @@ public class Simulator {
 			System.out.println(workers[q]);
 		}
 	}
-	
+	// @BC: It seems as if this method is not being used anywhere. (Although it could help simplify the many nested for loops above).
+	//			I say either use it or lose it!
 	public void passWeek() {
 		for (int i = 0; i < 5; i++) {
 			for (int q = 0; q < workers.length; q++) {
